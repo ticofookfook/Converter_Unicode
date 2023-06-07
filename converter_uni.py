@@ -53,7 +53,7 @@ else:
     except FileNotFoundError:
         print("Arquivo não encontrado.")
         exit()
-# Substituir os caracteres especiais pelas representações Unicode
+
 unicode_string = ''
 for char in input_string:
     if char in substitutions:
@@ -61,6 +61,6 @@ for char in input_string:
     else:
         unicode_string += char
 
-# Imprimir a string com os caracteres substituídos
+
 print(colored(f"[+]String em Unicode[+] ","red",attrs=["bold"]))
 print(colored(f"{unicode_string}","green",attrs=["bold"]))
