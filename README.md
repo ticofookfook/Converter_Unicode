@@ -5,5 +5,6 @@
 <h2>instalar=> pip install termcolor</h2>
 </br>
 
-<span>Uso exemplo para string: python3 teste.py -s "\"<img/src/onerror=alert(0)\"@xss.com"</span>
-<span>Uso exemplo para wordlist.txt: python3 teste.py -w texto.txt</span>
+<h3>Uso exemplo para string: python3 teste.py -s "\"<img/src/onerror=alert(0)\"@xss.com"</h3>
+</br>
+<h3>Uso exemplo para wordlist.txt: python3 teste.py -w texto.txt</h3>
